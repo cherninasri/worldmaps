@@ -10,7 +10,7 @@ import { PaysComponent } from './pays/pays.component';
 import {​​​​​ HttpClientModule }​​​​​ from'@angular/common/http';
 import { RegionssComponent } from './regionss/regionss.component';
 import { DetailsComponent } from './details/details.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

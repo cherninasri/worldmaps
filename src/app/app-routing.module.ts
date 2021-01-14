@@ -12,7 +12,7 @@ const routes: Routes = [
   {​​​​​ path:'regions',component:RegComponent}​​​​​,
   {​​​​​ path:'countries',component:PaysComponent}​​​​​,
   {​​​​​ path:'countries/:region',component:RegionssComponent}​​​​​,
-  {​​​​​ path:'country/:pays',component:DetailsComponent}​​​​​,
+  {​​​​​ path:'country/:pay',component:DetailsComponent}​​​​​,
 ];
 
 @NgModule({

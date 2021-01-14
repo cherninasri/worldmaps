@@ -1,1 +1,23 @@
-<p>pays works!</p>
+
+<div class="row">
+  <div class="col-4" *ngFor = " let c of countries ">
+    <div class="card">
+      <img
+      class="rounded-circle"
+      src="{{c.flag}}"
+       alt="{{c.name}}"
+      width="100px"
+      heigth="100px"
+    />
+    <ul class="list-group">
+      <li class="list-group-item">
+        {{c.nativeName}}
+        {{c.name}}
+        <a [routerLink]="['../country', c.name]" class="nav-link">more details</a>
+      </li>
+    </ul>
+
+    </div>
+  </div>
+
+</div>

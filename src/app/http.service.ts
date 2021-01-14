@@ -14,7 +14,35 @@ export class HttpService {​​​​​​​
            p.push(pay)
          }​​​​​​​
         )
-        console.log(p)
+        // console.log(p)
+      }​​​​​​​
+    )
+    return p;
+  }​​​​​​​
+  getdetails(name){​​​​​​​
+    let p=[]
+    this.http.get<any[]>('https://restcountries.eu/rest/v2/name/'+name).subscribe(
+      (pays)=>{​​​​​​​
+        pays.forEach(
+         pay => {​​​​​​​
+           p.push(pay)
+         }​​​​​​​
+        )
+        // console.log(p)
+      }​​​​​​​
+    )
+    return p;
+  }​​​​​​​
+  getallCountries (){​​​​​​​
+    let p=[]
+    this.http.get<any[]>('https://restcountries.eu/rest/v2/all').subscribe(
+      (pays)=>{​​​​​​​
+        pays.forEach(
+         pay => {​​​​​​​
+           p.push(pay)
+         }​​​​​​​
+        )
+        // console.log(p)
       }​​​​​​​
     )
     return p;

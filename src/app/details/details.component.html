@@ -1,1 +1,26 @@
-<p>details works!</p>
+<div class="center" *ngFor= 'let c of b'>
+<h4>
+  {{c.name}} :{{c.nativeName}}
+</h4>
+<img
+class="rounded-circle"
+src="{{c.flag}}"
+ alt="{{c.name}}"
+width="100px"
+heigth="100px"
+/>
+<h4>
+  information
+</h4>
+<ul class="list-group">
+  <li class="list-group-item">
+    <strong>nativeName:</strong> {{c.nativeName}} <br>
+    <strong>capital:</strong> {{c.capital}} <br>
+    <strong>population:</strong> {{c.population}} <br>
+    <strong>area:</strong> {{c.area}} <br>
+    <strong>languages:</strong> {{c.languages[0].nativeName}} ,{{c.languages[0].name}}<br>
+
+  </li>
+</ul>
+
+</div>

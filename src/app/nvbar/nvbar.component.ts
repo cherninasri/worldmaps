@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nvbar',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nvbar.component.css']
 })
 export class NvbarComponent implements OnInit {
-
-  constructor() { }
+p='';
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
-
+recherche(){
+  this.router.navigate(['countries/region',this.p])
+}
 }

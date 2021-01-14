@@ -1,8 +1,30 @@
-<ul class="list-group">
-<li class="liste-group-item" (click)=  "goRegion('Africa')">Africa</li>
-<li class="liste-group-item"  (click)=  "goRegion('Asia')">Asia</li>
-<li class="liste-group-item"  (click)=  "goRegion('Europe')">Europe</li>
-<li class="liste-group-item"  (click)=  "goRegion('Americas')">Americas</li>
-<li class="liste-group-item"  (click)=  "goRegion('Oceania')">Oceania</li>
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">1</th>
+      <th scope="col" (click)=  "goRegion('Africa')">Africa</th>
 
-</ul>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2</th>
+      <td (click)=  "goRegion('Asia')">Asia</td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td (click)=  "goRegion('Europe')">Europe</td>
+
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td colspan="2" (click)=  "goRegion('Americas')">Americas</td>
+
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td  (click)=  "goRegion('Oceania')">Oceania</td>
+      </tr>
+  </tbody>
+</table>
